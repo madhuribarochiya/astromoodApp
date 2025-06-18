@@ -1,0 +1,131 @@
+/* Cosmic background and typography */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at top, #1e003c, #000010);
+  color: #ffffffcc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* App container */
+.app-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  background: rgba(0, 0, 20, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffccff;
+  margin-bottom: 8px;
+}
+
+h3 {
+  color: #a0e7e5;
+  margin-bottom: 12px;
+}
+
+/* Labels and form controls */
+label {
+  font-weight: bold;
+  color: #ddddff;
+  margin-top: 12px;
+}
+
+textarea,
+input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444466;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 1rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #a770ef;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  background: linear-gradient(45deg, #6a0dad, #a770ef);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #a770ef;
+}
+
+button:disabled {
+  background: #333355;
+  cursor: wait;
+}
+
+/* Map container */
+.leaflet-container {
+  border: 2px solid #ffffff22;
+  border-radius: 8px;
+  filter: hue-rotate(40deg) brightness(0.9) contrast(1.1);
+}
+
+/* Selected coordinate info */
+.coordinates {
+  font-size: 0.9rem;
+  color: #c3f0ca;
+  margin-top: 4px;
+}
+
+/* Reading output */
+.response-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #5a189a;
+  margin-top: 30px;
+  color: #e0f7fa;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+.response-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Placeholder text styling */
+textarea::placeholder,
+input::placeholder {
+  color: #bbb;
+}
+
+/* Small note text */
+.note {
+  font-size: 0.85rem;
+  color: #bbbbff;
+  margin-top: 4px;
+}
